@@ -5,9 +5,124 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border-radius: 25px;
+  height: 100vh;
+  width: auto;
+  /*
+  padding: 143px;
+  */
+  align-items: center;
+  justify-content: center;
+  
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ) ,url(../src/bg2.jpg);
+  background-size: cover;
+  opacity: 0.9;
+  /*
+  #212529
+  */
+
 }
+
+
+.bg-light {
+  background-color: transparent; 
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+
+h4, .h4 {
+  font-size: 1.40625rem;
+  color: #212529;
+  padding: 15px;
+}
+h5, .h5 {
+  font-size: 0rem;
+}
+.sv_main span {
+  word-break: break-word;
+  color: #212529;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    color: #212529;
+}
+
+progress {
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  height: 1.25rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0.703125rem;
+  background-color: hsl(165, 74%, 46%);
+  border-radius: 0.25rem;
+  color: aqua;
+  width: 100%;
+}
+.sv_progress {
+	height: 10px;
+	width: 420px;
+	position: absolute;
+	bottom: 25px;
+	left: 55px;
+}
+
+.sv_progress_bar span { 
+	display: none;
+}
+
+.progress.center-block.mx-auto.mb-4{
+  width: 90%;
+  height: 1.25rem;
+  color: #FFD700;
+}
+.progress-bar{
+ background-color: #30ae918a;
+}
+
+.sp_152.bg-light{
+  background: aqua;
+}
+element.style {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.sv_main .sv_container {
+  color: #6d7072;
+  margin: 54px auto;
+}
+
+.sv_main .sv-ranking-item__content {
+  display: block;
+  background-color: white;
+  padding: 5px 10px 5px 35px;
+  border-radius: 100px;
+}
+
+.sv_qstn .sv-q-col-1 {
+  width: 100%;
+  display: flex;
+  padding-right: 1em;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+.sv_qstn .sv-q-col-1, .sv-question .sv-q-col-1 {
+  width: 100%;
+  display: flex;
+  padding-right: 1em;
+  box-sizing: border-box;
+  word-break: break-word;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  align-content: stretch;
+  align-items: stretch;
 }
