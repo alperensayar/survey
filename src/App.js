@@ -87,7 +87,7 @@ function App() {
       }
       onComplete={(survey) => {
 
-        axios.post("http://localhost:5000/urlpoint", {
+        axios.post("https://5395-24-133-168-43.ngrok.io/urlpoint", {
           data: survey.data,
           pages: myList,
           time: myTime,
@@ -147,7 +147,7 @@ function App() {
       }
       onComplete={(survey) => {
 
-        axios.post("http://localhost:5000/urlpoint", {
+        axios.post("https://5395-24-133-168-43.ngrok.io/urlpoint", {
           data: survey.data,
           pages: myList,
           time: myTime,
