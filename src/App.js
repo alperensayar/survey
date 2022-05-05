@@ -24,11 +24,11 @@ function App() {
   useEffect(() => {
     var durum;
     //var visited = 0;
-    
+    //https://f01f-178-233-153-66.ngrok.io 
     const ddd = window.location.pathname;
     Survey.StylesManager.applyTheme("bootstrap");
     //Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
-    axios.post("https://5395-24-133-168-43.ngrok.io/apiget", {
+    axios.post("https://f01f-178-233-153-66.ngrok.io/apiget", {
         path:ddd
         }).then(res => {
           console.log(res.data.durum);
@@ -87,7 +87,7 @@ function App() {
       }
       onComplete={(survey) => {
 
-        axios.post("https://5395-24-133-168-43.ngrok.io/urlpoint", {
+        axios.post("https://f01f-178-233-153-66.ngrok.io/urlpoint", {
           data: survey.data,
           pages: myList,
           time: myTime,
@@ -113,7 +113,7 @@ function App() {
         myList.push(survey.currentPageNo);
         myTime.push(Date.now());
 
-        axios.post("https://5395-24-133-168-43.ngrok.io/getresult", {
+        axios.post("https://f01f-178-233-153-66.ngrok.io/getresult", {
           data: survey.data,
           pages: myList,
           time: myTime,
@@ -147,7 +147,7 @@ function App() {
       }
       onComplete={(survey) => {
 
-        axios.post("https://5395-24-133-168-43.ngrok.io/urlpoint", {
+        axios.post("https://f01f-178-233-153-66.ngrok.io/urlpoint", {
           data: survey.data,
           pages: myList,
           time: myTime,
@@ -171,7 +171,7 @@ function App() {
         myList.push(survey.currentPageNo);
         myTime.push(Date.now());
 
-        axios.post("https://5395-24-133-168-43.ngrok.io/getresult", {
+        axios.post("https://f01f-178-233-153-66.ngrok.io/getresult", {
           data: survey.data,
           pages: myList,
           time: myTime,
